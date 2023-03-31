@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- This website was created by: Marissa Rodriguez 
+	Date: 02/01/2023
+	File name: contact.html -->
+	<html lang='en'>
+<head>
+	<title>Contact Us - Location | Celina's Cantina</title>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Here is our email along with our social media and current location. If you have any questions, reach out to us on any platforms listed below.">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+     <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a> 
+     </nav>
+
+    <!-- Use the header area for the name or logo -->
+    <header id="logo">
+    <figure class="frame">
+        <a href=index.html><img src='images/CelinaLogo.png' alt='logo' class="round"></a>
+        </figure>
+    </header>
+
+	<!-- Tablet, Desktop Nav -->
+	<nav class="tablet-desktop">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="about.html">About Us</a></li>
+		</ul>
+	</nav>
+
+    	<!-- Use the main area to add the main content of the webpage -->
+	<main>
+
+			<section id="ContactUs">
+
+				<h3>Any questions? You can reach us by email or telephone.</h3>
+				<h5 class="tablet-desktop"><a href="tel:1112330009">(111) 233-0009</a></h5>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224741.4788829389!2d-82.41116501746875!3d28.34113979766657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2ab4af579f8d7%3A0x692f754cd52b93!2sPasco-Hernando%20State%20College%20East%20Campus!5e0!3m2!1sen!2sus!4v1631759151186!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" class="map"></iframe>
+            
+	</section>
+    </main>
+
+	<div id="form">
+
+		<h2>For any inquiries, complete the form below.</h2>
+
+		<form class="form-grid"><!-- Start Form -->
+
+			<fieldset>
+				<legend>Customer Information</legend>
+				<label for="fName">First Name:</label>
+				<input type="text" name="fName" id="fName" required>
+
+				<label for="lName">Last Name:</label>
+				<input type="text" name="lName" id="lName" required>
+
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email" required>
+
+				<label for="phone">Phone:</label>
+				<input type="tel" id="phone" name="phone" required>
+			</fieldset>
+
+			<fieldset>
+				<legend>Additional Information</legend>
+				<p>I would like more information about:</p>
+
+				<label for="catering"><input type="checkbox" name="interest" id="catering" value="catering">Catering</label>
+
+				<label for="fa"><input type="checkbox" name="interest" id="fa" value="Food Allergies">Food Allergies</label>
+
+				<label for="menu"><input type="checkbox" name="interest" id="menu" value="Menu">Menu</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Referral Source</legend>
+				<label for="reference">How did you find us?</label>
+				<select name="reference" id="reference">
+					<option value="ad">Advertisement</option>
+					<option value="friend">Friend</option>
+					<option value="business">Business Card</option>
+					<option value="social">Social Media</option>
+					<option value="other">Other</option>
+				</select>
+
+				<label for="questions">Questions?</label>
+				<textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+			</fieldset>
+
+			<input type="submit" id="submit" value="Submit" class="btn">
+			
+		</form>
+	</div>
+
+	<!-- Use the footer area to add the webpage footer content -->
+	<footer>
+		
+		<div class="copyright">
+			<p>&copy; Copyright 2023. All Rights Reserved.</p>
+			<p><a href="mailto:MCR1049@STUDENT.PHSC.EDU">MCR1049@STUDENT.PHSC.EDU</a></p>
+		</div>
+
+		<div class="social">
+			<a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="black and white Facebook logo"></a>
+			<a href="https://www.twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="black and white Twitter logo"></a>
+		</div>
+
+	</footer>
+
+	<script src="scripts/scripts.js"></script>
+
+</body>
+</html>
